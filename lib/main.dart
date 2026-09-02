@@ -3,6 +3,7 @@ import 'package:go_router/go_router.dart';
 
 import 'models/card-models.dart';
 import 'pages/cards_page.dart';
+import 'pages/combat/booster_opening_page.dart';
 import 'pages/combat/combat_arena_page.dart';
 import 'pages/combat/combat_initial_page.dart';
 import 'pages/combat/combat_loading_page.dart';
@@ -21,11 +22,12 @@ class MyApp extends StatefulWidget {
 }
 
 class _MyAppState extends State<MyApp> {
+  final List<PokemonData> _myCards = [];
   final List<PokemonData> _deck = [];
 
   late final GoRouter _router = GoRouter(
     navigatorKey: _rootNavigatorKey,
-    initialLocation: '/cards',
+    initialLocation: '/starter-booster',
     routes: [
       ShellRoute(
         builder: (context, state, child) {
@@ -70,14 +72,32 @@ class _MyAppState extends State<MyApp> {
         routes: [
           GoRoute(
             path: '/cards',
-            builder: (context, state) =>
-                CardsPage(deck: _deck, onDeckChanged: () => setState(() {})),
+            builder: (context, state) => CardsPage(
+              myCards: _myCards,
+              deck: _deck,
+              onDeckChanged: () => setState(() {}),
+            ),
           ),
           GoRoute(
             path: '/combat',
             builder: (context, state) => CombatInitialPage(deck: _deck),
           ),
         ],
+      ),
+      GoRoute(
+        path: '/starter-booster',
+        builder: (context, state) => BoosterOpeningPage(
+          cardCount: 3,
+          title: 'Booster de Départ (3 Cartes)',
+          onBoosterOpened: (wonCards) {
+            setState(() {
+              _myCards.addAll(wonCards);
+              if (_deck.isEmpty) {
+                _deck.addAll(wonCards.take(3));
+              }
+            });
+          },
+        ),
       ),
       GoRoute(
         path: '/combat/loading',
@@ -92,6 +112,18 @@ class _MyAppState extends State<MyApp> {
           final deck = state.extra as List<PokemonData>;
           return CombatArenaPage(playerDeck: deck);
         },
+      ),
+      GoRoute(
+        path: '/combat/booster',
+        builder: (context, state) => BoosterOpeningPage(
+          cardCount: 2,
+          title: 'Booster Victoire (2 Cartes)',
+          onBoosterOpened: (wonCards) {
+            setState(() {
+              _myCards.addAll(wonCards);
+            });
+          },
+        ),
       ),
     ],
   );
