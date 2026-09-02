@@ -1,0 +1,449 @@
+[
+    {
+        "category": "Pokémon",
+        "id": "swsh3-136",
+        "illustrator": "tetsuya koizumi",
+        "image": "https://assets.tcgdex.net/fr/swsh/swsh3/136",
+        "localId": "136",
+        "name": "Fouinar",
+        "rarity": "Peu Commune",
+        "set": {
+            "cardCount": {
+                "official": 189,
+                "total": 201
+            },
+            "id": "swsh3",
+            "logo": "https://assets.tcgdex.net/fr/swsh/swsh3/logo",
+            "name": "Ténèbres Embrasées",
+            "symbol": "https://assets.tcgdex.net/univ/swsh/swsh3/symbol"
+        },
+        "variants": {
+            "firstEdition": false,
+            "holo": false,
+            "normal": true,
+            "reverse": true,
+            "wPromo": false
+        },
+        "hp": 110,
+        "types": [
+            "v"
+        ],
+        "evolveFrom": "Fouinette",
+        "stage": "Niveau 1",
+        "attacks": [
+            {
+                "cost": [
+                    "v"
+                ],
+                "name": "Mode Cool",
+                "effect": "Piochez 3 cartes."
+            },
+            {
+                "cost": [
+                    "v"
+                ],
+                "name": "Éclate-Queue",
+                "effect": "Lancez une pièce. Si c'est pile, cette attaque ne fait rien.",
+                "damage": 90
+            }
+        ],
+        "weaknesses": [
+            {
+                "type": "Combat",
+                "value": "×2"
+            }
+        ],
+        "retreat": 1,
+        "regulationMark": "D",
+        "legal": {
+            "standard": false,
+            "expanded": true
+        },
+        "updated": "2021-10-26T10:40:03+02:00"
+    },
+    {
+        "category": "Pokémon",
+        "id": "swsh3-137",
+        "illustrator": "Kazuma Koda",
+        "image": "https://assets.tcgdex.net/fr/swsh/swsh3/137",
+        "localId": "137",
+        "name": "Insolourdo",
+        "rarity": "Commune",
+        "set": {
+            "cardCount": {
+                "official": 189,
+                "total": 201
+            },
+            "id": "swsh3",
+            "logo": "https://assets.tcgdex.net/fr/swsh/swsh3/logo",
+            "name": "Ténèbres Embrasées",
+            "symbol": "https://assets.tcgdex.net/univ/swsh/swsh3/symbol"
+        },
+        "variants": {
+            "firstEdition": false,
+            "holo": false,
+            "normal": true,
+            "reverse": true,
+            "wPromo": false
+        },
+        "variants_detailed": [
+            {
+                "type": "Normal",
+                "size": "Standard",
+                "variantId": "endfynwn4n10gzq",
+                "pricing": {
+                    "cardmarket": {
+                        "updated": "2026-09-01T13:30:26.258Z",
+                        "unit": "EUR",
+                        "idProduct": 483564,
+                        "avg": 0.05,
+                        "low": 0.02,
+                        "trend": 0.04,
+                        "avg1": 0.02,
+                        "avg7": 0.04,
+                        "avg30": 0.05,
+                        "avg-holo": 0.22,
+                        "low-holo": 0.04,
+                        "trend-holo": 0.22,
+                        "avg1-holo": 0.23,
+                        "avg7-holo": 0.22,
+                        "avg30-holo": 0.25
+                    },
+                    "tcgplayer": {
+                        "unit": "USD",
+                        "updated": "2026-09-01T13:30:43.420Z",
+                        "normal": {
+                            "productId": 219334,
+                            "lowPrice": 0.01,
+                            "midPrice": 0.16,
+                            "highPrice": 25.11,
+                            "marketPrice": 0.12,
+                            "directLowPrice": 0.07
+                        },
+                        "reverse-holofoil": {
+                            "productId": 219334,
+                            "lowPrice": 0.05,
+                            "midPrice": 0.25,
+                            "highPrice": 2.31,
+                            "marketPrice": 0.25,
+                            "directLowPrice": 0.2
+                        }
+                    }
+                }
+            },
+            {
+                "type": "Reverse",
+                "size": "Standard",
+                "variantId": "cm4kqul3x1bwlz1f",
+                "pricing": {
+                    "cardmarket": {
+                        "updated": "2026-09-01T13:30:26.258Z",
+                        "unit": "EUR",
+                        "idProduct": 483564,
+                        "avg": 0.05,
+                        "low": 0.02,
+                        "trend": 0.04,
+                        "avg1": 0.02,
+                        "avg7": 0.04,
+                        "avg30": 0.05,
+                        "avg-holo": 0.22,
+                        "low-holo": 0.04,
+                        "trend-holo": 0.22,
+                        "avg1-holo": 0.23,
+                        "avg7-holo": 0.22,
+                        "avg30-holo": 0.25
+                    },
+                    "tcgplayer": {
+                        "unit": "USD",
+                        "updated": "2026-09-01T13:30:43.420Z",
+                        "normal": {
+                            "productId": 219334,
+                            "lowPrice": 0.01,
+                            "midPrice": 0.16,
+                            "highPrice": 25.11,
+                            "marketPrice": 0.12,
+                            "directLowPrice": 0.07
+                        },
+                        "reverse-holofoil": {
+                            "productId": 219334,
+                            "lowPrice": 0.05,
+                            "midPrice": 0.25,
+                            "highPrice": 2.31,
+                            "marketPrice": 0.25,
+                            "directLowPrice": 0.2
+                        }
+                    }
+                }
+            }
+        ],
+        "dexId": [
+            206
+        ],
+        "hp": 60,
+        "types": [
+            "v"
+        ],
+        "stage": "Base",
+        "abilities": [
+            {
+                "type": "Talent",
+                "name": "Dernier Coup",
+                "effect": "Si ce Pokémon est mis K.O. par les dégâts d'une attaques d'un Pokémon de votre adversaire, défaussez les 2 cartes du dessus du deck de votre adversaire."
+            }
+        ],
+        "attacks": [
+            {
+                "cost": [
+                    "v"
+                ],
+                "name": "Collision",
+                "damage": 20
+            }
+        ],
+        "weaknesses": [
+            {
+                "type": "Combat",
+                "value": "×2"
+            }
+        ],
+        "retreat": 1,
+        "regulationMark": "D",
+        "legal": {
+            "standard": false,
+            "expanded": true
+        },
+        "updated": "2026-07-01T21:27:44+01:00",
+        "pricing": {
+            "cardmarket": {
+                "updated": "2026-09-01T13:30:26.258Z",
+                "unit": "EUR",
+                "idProduct": 483564,
+                "avg": 0.05,
+                "low": 0.02,
+                "trend": 0.04,
+                "avg1": 0.02,
+                "avg7": 0.04,
+                "avg30": 0.05,
+                "avg-holo": 0.22,
+                "low-holo": 0.04,
+                "trend-holo": 0.22,
+                "avg1-holo": 0.23,
+                "avg7-holo": 0.22,
+                "avg30-holo": 0.25
+            },
+            "tcgplayer": {
+                "unit": "USD",
+                "updated": "2026-09-01T13:30:43.420Z",
+                "normal": {
+                    "productId": 219334,
+                    "lowPrice": 0.01,
+                    "midPrice": 0.16,
+                    "highPrice": 25.11,
+                    "marketPrice": 0.12,
+                    "directLowPrice": 0.07
+                },
+                "reverse-holofoil": {
+                    "productId": 219334,
+                    "lowPrice": 0.05,
+                    "midPrice": 0.25,
+                    "highPrice": 2.31,
+                    "marketPrice": 0.25,
+                    "directLowPrice": 0.2
+                }
+            }
+        }
+    },
+    {
+        "category": "Pokémon",
+        "id": "swsh3-138",
+        "illustrator": "Yukiko Baba",
+        "image": "https://assets.tcgdex.net/fr/swsh/swsh3/138",
+        "localId": "138",
+        "name": "Teddiursa",
+        "rarity": "Commune",
+        "set": {
+            "cardCount": {
+                "official": 189,
+                "total": 201
+            },
+            "id": "swsh3",
+            "logo": "https://assets.tcgdex.net/fr/swsh/swsh3/logo",
+            "name": "Ténèbres Embrasées",
+            "symbol": "https://assets.tcgdex.net/univ/swsh/swsh3/symbol"
+        },
+        "variants": {
+            "firstEdition": false,
+            "holo": false,
+            "normal": true,
+            "reverse": true,
+            "wPromo": false
+        },
+        "variants_detailed": [
+            {
+                "type": "Normal",
+                "size": "Standard",
+                "variantId": "endfynwn4n10gzq",
+                "pricing": {
+                    "cardmarket": {
+                        "updated": "2026-09-01T13:30:26.192Z",
+                        "unit": "EUR",
+                        "idProduct": 483569,
+                        "avg": 0.06,
+                        "low": 0.02,
+                        "trend": 0.06,
+                        "avg1": 0.02,
+                        "avg7": 0.04,
+                        "avg30": 0.06,
+                        "avg-holo": 0.24,
+                        "low-holo": 0.02,
+                        "trend-holo": 0.24,
+                        "avg1-holo": 0.2,
+                        "avg7-holo": 0.3,
+                        "avg30-holo": 0.26
+                    },
+                    "tcgplayer": {
+                        "unit": "USD",
+                        "updated": "2026-09-01T13:30:43.420Z",
+                        "normal": {
+                            "productId": 219336,
+                            "lowPrice": 0.02,
+                            "midPrice": 0.19,
+                            "highPrice": 25.12,
+                            "marketPrice": 0.09,
+                            "directLowPrice": 0.06
+                        },
+                        "reverse-holofoil": {
+                            "productId": 219336,
+                            "lowPrice": 0.1,
+                            "midPrice": 0.34,
+                            "highPrice": 2,
+                            "marketPrice": 0.33,
+                            "directLowPrice": 0.38
+                        }
+                    }
+                }
+            },
+            {
+                "type": "Reverse",
+                "size": "Standard",
+                "variantId": "cm4kqul3x1bwlz1f",
+                "pricing": {
+                    "cardmarket": {
+                        "updated": "2026-09-01T13:30:26.192Z",
+                        "unit": "EUR",
+                        "idProduct": 483569,
+                        "avg": 0.06,
+                        "low": 0.02,
+                        "trend": 0.06,
+                        "avg1": 0.02,
+                        "avg7": 0.04,
+                        "avg30": 0.06,
+                        "avg-holo": 0.24,
+                        "low-holo": 0.02,
+                        "trend-holo": 0.24,
+                        "avg1-holo": 0.2,
+                        "avg7-holo": 0.3,
+                        "avg30-holo": 0.26
+                    },
+                    "tcgplayer": {
+                        "unit": "USD",
+                        "updated": "2026-09-01T13:30:43.420Z",
+                        "normal": {
+                            "productId": 219336,
+                            "lowPrice": 0.02,
+                            "midPrice": 0.19,
+                            "highPrice": 25.12,
+                            "marketPrice": 0.09,
+                            "directLowPrice": 0.06
+                        },
+                        "reverse-holofoil": {
+                            "productId": 219336,
+                            "lowPrice": 0.1,
+                            "midPrice": 0.34,
+                            "highPrice": 2,
+                            "marketPrice": 0.33,
+                            "directLowPrice": 0.38
+                        }
+                    }
+                }
+            }
+        ],
+        "dexId": [
+            216
+        ],
+        "hp": 70,
+        "types": [
+            "v"
+        ],
+        "stage": "Base",
+        "attacks": [
+            {
+                "cost": [
+                    "v"
+                ],
+                "name": "Regard Touchant",
+                "effect": "Pendant le prochain tour de votre adversaire, le Pokémon Défenseur ne peut pas battre en retraite."
+            },
+            {
+                "cost": [
+                    "v",
+                    "v"
+                ],
+                "name": "Creusogriffes",
+                "damage": 20
+            }
+        ],
+        "weaknesses": [
+            {
+                "type": "Combat",
+                "value": "×2"
+            }
+        ],
+        "retreat": 2,
+        "regulationMark": "D",
+        "legal": {
+            "standard": false,
+            "expanded": true
+        },
+        "updated": "2026-07-01T21:27:44+01:00",
+        "pricing": {
+            "cardmarket": {
+                "updated": "2026-09-01T13:30:26.192Z",
+                "unit": "EUR",
+                "idProduct": 483569,
+                "avg": 0.06,
+                "low": 0.02,
+                "trend": 0.06,
+                "avg1": 0.02,
+                "avg7": 0.04,
+                "avg30": 0.06,
+                "avg-holo": 0.24,
+                "low-holo": 0.02,
+                "trend-holo": 0.24,
+                "avg1-holo": 0.2,
+                "avg7-holo": 0.3,
+                "avg30-holo": 0.26
+            },
+            "tcgplayer": {
+                "unit": "USD",
+                "updated": "2026-09-01T13:30:43.420Z",
+                "normal": {
+                    "productId": 219336,
+                    "lowPrice": 0.02,
+                    "midPrice": 0.19,
+                    "highPrice": 25.12,
+                    "marketPrice": 0.09,
+                    "directLowPrice": 0.06
+                },
+                "reverse-holofoil": {
+                    "productId": 219336,
+                    "lowPrice": 0.1,
+                    "midPrice": 0.34,
+                    "highPrice": 2,
+                    "marketPrice": 0.33,
+                    "directLowPrice": 0.38
+                }
+            }
+        }
+    }
+]
