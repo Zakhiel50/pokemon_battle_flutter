@@ -1,10 +1,7 @@
-import 'dart:convert';
-
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart' show rootBundle;
 
-import 'models/card-models.dart';
-import 'widgets/card.dart';
+import 'pages/cards_page.dart';
+import 'pages/combat_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -17,11 +14,14 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Pokemon Battle',
+      scrollBehavior: const MaterialScrollBehavior().copyWith(
+        overscroll: false,
+      ),
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+        colorScheme: ColorScheme.fromSeed(seedColor: Colors.white),
         useMaterial3: true,
       ),
-      home: const MyHomePage(title: 'Pokemon Battle Cards'),
+      home: const MyHomePage(title: 'Pokemon Battle'),
     );
   }
 }
@@ -36,64 +36,49 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  late Future<List<PokemonData>> _pokemonListFuture;
+  int _currentIndex = 0;
 
-  @override
-  void initState() {
-    super.initState();
-    _pokemonListFuture = _loadPokemonData();
-  }
+  final List<Widget> _pages = const [
+    CardsPage(),
+    CombatPage(),
+  ];
 
-  Future<List<PokemonData>> _loadPokemonData() async {
-    final String jsonString = await rootBundle.loadString(
-      'assets/pokemon-data.json',
-    );
-    final List<dynamic> jsonList = jsonDecode(jsonString);
-    return jsonList
-        .map((json) => PokemonData.fromJson(json as Map<String, dynamic>))
-        .toList();
-  }
+  final List<String> _titles = const [
+    'Mes cartes Pokémon',
+    'Arène de Combat',
+  ];
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
-        title: Text(widget.title),
+        title: Text(_titles[_currentIndex]),
+        centerTitle: true,
       ),
-      body: FutureBuilder<List<PokemonData>>(
-        future: _pokemonListFuture,
-        builder: (context, snapshot) {
-          if (snapshot.connectionState == ConnectionState.waiting) {
-            return const Center(child: CircularProgressIndicator());
-          }
-          if (snapshot.hasError) {
-            return Center(
-              child: Padding(
-                padding: const EdgeInsets.all(16.0),
-                child: Text('Erreur de chargement: ${snapshot.error}'),
-              ),
-            );
-          }
-          final pokemons = snapshot.data ?? [];
-          if (pokemons.isEmpty) {
-            return const Center(child: Text('Aucun Pokémon trouvé.'));
-          }
-
-          return ListView.separated(
-            padding: const EdgeInsets.all(16),
-            scrollDirection: Axis.horizontal,
-            itemCount: pokemons.length,
-            separatorBuilder: (context, index) => const SizedBox(width: 16),
-            itemBuilder: (context, index) {
-              return Center(
-                child: SingleChildScrollView(
-                  child: PokemonCard(data: pokemons[index]),
-                ),
-              );
-            },
-          );
+      body: IndexedStack(
+        index: _currentIndex,
+        children: _pages,
+      ),
+      bottomNavigationBar: NavigationBar(
+        selectedIndex: _currentIndex,
+        onDestinationSelected: (int index) {
+          setState(() {
+            _currentIndex = index;
+          });
         },
+        destinations: const [
+          NavigationDestination(
+            icon: Icon(Icons.style_outlined),
+            selectedIcon: Icon(Icons.style),
+            label: 'Mes cartes',
+          ),
+          NavigationDestination(
+            icon: Icon(Icons.sports_esports_outlined),
+            selectedIcon: Icon(Icons.sports_esports),
+            label: 'Combat',
+          ),
+        ],
       ),
     );
   }
