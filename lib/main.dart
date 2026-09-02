@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import 'models/card-models.dart';
 import 'pages/cards_page.dart';
 import 'pages/combat_page.dart';
 
@@ -37,11 +38,7 @@ class MyHomePage extends StatefulWidget {
 
 class _MyHomePageState extends State<MyHomePage> {
   int _currentIndex = 0;
-
-  final List<Widget> _pages = const [
-    CardsPage(),
-    CombatPage(),
-  ];
+  final List<PokemonData> _deck = [];
 
   final List<String> _titles = const [
     'Mes cartes Pokémon',
@@ -50,6 +47,14 @@ class _MyHomePageState extends State<MyHomePage> {
 
   @override
   Widget build(BuildContext context) {
+    final pages = [
+      CardsPage(
+        deck: _deck,
+        onDeckChanged: () => setState(() {}),
+      ),
+      CombatPage(deck: _deck),
+    ];
+
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
@@ -58,7 +63,7 @@ class _MyHomePageState extends State<MyHomePage> {
       ),
       body: IndexedStack(
         index: _currentIndex,
-        children: _pages,
+        children: pages,
       ),
       bottomNavigationBar: NavigationBar(
         selectedIndex: _currentIndex,

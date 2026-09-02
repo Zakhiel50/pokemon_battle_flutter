@@ -445,5 +445,269 @@
                 }
             }
         }
+    },
+    {
+        "category": "Pokémon",
+        "id": "swsh3-1",
+        "illustrator": "Saki Hayashiro",
+        "image": "https://assets.tcgdex.net/fr/swsh/swsh3/1",
+        "localId": "1",
+        "name": "Papilusion V",
+        "rarity": "Holo Rare V",
+        "set": {
+            "cardCount": {
+                "official": 189,
+                "total": 201
+            },
+            "id": "swsh3",
+            "logo": "https://assets.tcgdex.net/fr/swsh/swsh3/logo",
+            "name": "Ténèbres Embrasées",
+            "symbol": "https://assets.tcgdex.net/univ/swsh/swsh3/symbol"
+        },
+        "variants": {
+            "firstEdition": false,
+            "holo": true,
+            "normal": false,
+            "reverse": false,
+            "wPromo": false
+        },
+        "variants_detailed": [
+            {
+                "type": "Holo",
+                "size": "Standard",
+                "variantId": "jr7oetx1mqug9",
+                "pricing": {
+                    "cardmarket": {
+                        "updated": "2026-09-01T13:30:26.396Z",
+                        "unit": "EUR",
+                        "idProduct": 482879,
+                        "avg": 1.75,
+                        "low": 0.95,
+                        "trend": 1.8,
+                        "avg1": 2.49,
+                        "avg7": 1.87,
+                        "avg30": 1.94,
+                        "avg-holo": null,
+                        "low-holo": null,
+                        "trend-holo": 1.92,
+                        "avg1-holo": 1.5,
+                        "avg7-holo": 1.87,
+                        "avg30-holo": 2
+                    },
+                    "tcgplayer": {
+                        "unit": "USD",
+                        "updated": "2026-09-01T13:30:43.420Z",
+                        "holofoil": {
+                            "productId": 219054,
+                            "lowPrice": 0.99,
+                            "midPrice": 1.67,
+                            "highPrice": 20,
+                            "marketPrice": 1.53,
+                            "directLowPrice": 2.02
+                        }
+                    }
+                }
+            }
+        ],
+        "dexId": [
+            12
+        ],
+        "hp": 190,
+        "types": [
+            "Plante"
+        ],
+        "stage": "Base",
+        "suffix": "V",
+        "attacks": [
+            {
+                "cost": [
+                    "Plante"
+                ],
+                "name": "Poison Étourdissant",
+                "effect": "Le Pokémon Actif de votre adversaire est maintenant Confus et Empoisonné."
+            },
+            {
+                "cost": [
+                    "Plante",
+                    "Plante",
+                    "Incolore"
+                ],
+                "name": "Vent Impitoyable",
+                "damage": 130
+            }
+        ],
+        "weaknesses": [
+            {
+                "type": "Feu",
+                "value": "×2"
+            }
+        ],
+        "retreat": 1,
+        "regulationMark": "D",
+        "legal": {
+            "standard": false,
+            "expanded": true
+        },
+        "updated": "2026-07-01T21:27:44+01:00",
+        "pricing": {
+            "cardmarket": {
+                "updated": "2026-09-01T13:30:26.396Z",
+                "unit": "EUR",
+                "idProduct": 482879,
+                "avg": 1.75,
+                "low": 0.95,
+                "trend": 1.8,
+                "avg1": 2.49,
+                "avg7": 1.87,
+                "avg30": 1.94,
+                "avg-holo": null,
+                "low-holo": null,
+                "trend-holo": 1.92,
+                "avg1-holo": 1.5,
+                "avg7-holo": 1.87,
+                "avg30-holo": 2
+            },
+            "tcgplayer": {
+                "unit": "USD",
+                "updated": "2026-09-01T13:30:43.420Z",
+                "holofoil": {
+                    "productId": 219054,
+                    "lowPrice": 0.99,
+                    "midPrice": 1.67,
+                    "highPrice": 20,
+                    "marketPrice": 1.53,
+                    "directLowPrice": 2.02
+                }
+            }
+        }
+    },
+    {
+        "category": "Pokémon",
+        "id": "swsh3-2",
+        "illustrator": "aky CG Works",
+        "image": "https://assets.tcgdex.net/fr/swsh/swsh3/2",
+        "localId": "2",
+        "name": "Papilusion VMAX",
+        "rarity": "Holo Rare VMAX",
+        "set": {
+            "cardCount": {
+                "official": 189,
+                "total": 201
+            },
+            "id": "swsh3",
+            "logo": "https://assets.tcgdex.net/fr/swsh/swsh3/logo",
+            "name": "Ténèbres Embrasées",
+            "symbol": "https://assets.tcgdex.net/univ/swsh/swsh3/symbol"
+        },
+        "variants": {
+            "firstEdition": false,
+            "holo": true,
+            "normal": false,
+            "reverse": false,
+            "wPromo": false
+        },
+        "variants_detailed": [
+            {
+                "type": "Holo",
+                "size": "Standard",
+                "variantId": "jr7oetx1mqug9",
+                "pricing": {
+                    "cardmarket": {
+                        "updated": "2026-09-01T13:30:26.016Z",
+                        "unit": "EUR",
+                        "idProduct": 482884,
+                        "avg": 5.57,
+                        "low": 2.5,
+                        "trend": 6.05,
+                        "avg1": 7,
+                        "avg7": 5.14,
+                        "avg30": 5.35,
+                        "avg-holo": null,
+                        "low-holo": null,
+                        "trend-holo": 5.65,
+                        "avg1-holo": 4,
+                        "avg7-holo": 5.41,
+                        "avg30-holo": 7.31
+                    },
+                    "tcgplayer": {
+                        "unit": "USD",
+                        "updated": "2026-09-01T13:30:43.420Z",
+                        "holofoil": {
+                            "productId": 219055,
+                            "lowPrice": 3.9,
+                            "midPrice": 6.21,
+                            "highPrice": 96.95,
+                            "marketPrice": 6.09,
+                            "directLowPrice": 5.33
+                        }
+                    }
+                }
+            }
+        ],
+        "dexId": [
+            12
+        ],
+        "hp": 300,
+        "types": [
+            "Plante"
+        ],
+        "evolveFrom": "Papilusion-V",
+        "stage": "VMAX",
+        "attacks": [
+            {
+                "cost": [
+                    "Plante",
+                    "Plante",
+                    "Incolore"
+                ],
+                "name": "Toxibrise G-Max",
+                "effect": "Le Pokémon Actif de votre adversaire est maintenant Confus et Empoisonné.",
+                "damage": 150
+            }
+        ],
+        "weaknesses": [
+            {
+                "type": "Feu",
+                "value": "×2"
+            }
+        ],
+        "retreat": 0,
+        "regulationMark": "D",
+        "legal": {
+            "standard": false,
+            "expanded": true
+        },
+        "updated": "2026-07-01T21:27:44+01:00",
+        "pricing": {
+            "cardmarket": {
+                "updated": "2026-09-01T13:30:26.016Z",
+                "unit": "EUR",
+                "idProduct": 482884,
+                "avg": 5.57,
+                "low": 2.5,
+                "trend": 6.05,
+                "avg1": 7,
+                "avg7": 5.14,
+                "avg30": 5.35,
+                "avg-holo": null,
+                "low-holo": null,
+                "trend-holo": 5.65,
+                "avg1-holo": 4,
+                "avg7-holo": 5.41,
+                "avg30-holo": 7.31
+            },
+            "tcgplayer": {
+                "unit": "USD",
+                "updated": "2026-09-01T13:30:43.420Z",
+                "holofoil": {
+                    "productId": 219055,
+                    "lowPrice": 3.9,
+                    "midPrice": 6.21,
+                    "highPrice": 96.95,
+                    "marketPrice": 6.09,
+                    "directLowPrice": 5.33
+                }
+            }
+        }
     }
 ]
